@@ -11,7 +11,10 @@ const img = `
 
 sendButton.addEventListener("click", (e) => {
   e.preventDefault();
-  main.innerHTML = `
+  const newMsg = document.createElement("div")
+  newMsg.className = "c"
+  newMsg.innerHTML = `
+    
       <div class="c">
         <div id="comments-div">
           <div class="counter">
@@ -32,6 +35,7 @@ sendButton.addEventListener("click", (e) => {
           </div>
         </div>
       </div>
-  `;
+  `
+  main.appendChild(newMsg)
   textArea.innerHTML = ``
 });
