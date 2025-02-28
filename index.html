@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive comments section</title>
+    <link rel="stylesheet" href="./src/style/INDEX.CSS" />
+  </head>
+  <body>
+    <main>
+      <div class="c">
+        <div id="comments-div">
+          <div class="counter">
+            <img onclick="add()" src="./images/icon-plus.svg" alt="plus" id="p" />
+            <h4 id="bum-txt">12</h4>
+            <img onclick="subtract()" src="./images/icon-minus.svg" alt="minus" />
+          </div>
+          <div class="text">
+            <div class="profile">
+              <img
+                src="./images/avatars/image-amyrobson.png"
+                alt="amy"
+                id="aa"
+              />
+              <h4>amyrobson</h4>
+              <p class="time">1 month ago</p>
+              <img src="./images/icon-reply.svg" alt="reply" id="ab" />
+              <p>Reply</p>
+            </div>
+            <br />
+            <p>
+              Impressive! Though it seems the drag feature could be improved.
+              But overall it <br />
+              looks incredible. You've nailed the design and the responsiveness
+              at various <br />
+              breakpoints work really well.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="c">
+        <div id="comments-div">
+          <div class="counter">
+            <img onclick="add1()" src="./images/icon-plus.svg" alt="plus" id="p" />
+            <h4 id="bum-txt1">5</h4>
+            <img onclick="subtract1()" src="./images/icon-minus.svg" alt="minus" />
+          </div>
+          <div class="text">
+            <div class="profile">
+              <img
+                src="./images/avatars/image-maxblagun.png"
+                alt="amy"
+                id="aa"
+              />
+              <h4>maxblagun</h4>
+              <p class="time">2 weeks ago</p>
+              <img src="./images/icon-reply.svg" alt="reply" id="ab" />
+              <p>Reply</p>
+            </div>
+            <br />
+            <p>
+              Whoa, your project looks really awesome! How long have you been
+              coding for? I'm <br />
+              still new, but I want to dive into React as weel soon. Perhaps you
+              can give me an <br />
+              insight on where I can learn React? Thanks!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vlc">
+        <div class="vl"></div>
+        <div class="huqdfvw">
+          <div class="c">
+            <div id="comments-diva">
+              <div class="counter">
+                <img onclick="add2()" src="./images/icon-plus.svg" alt="plus" id="p" />
+                <h4 id="bum-txt2">5</h4>
+                <img onclick="subtract2()" src="./images/icon-minus.svg" alt="minus" />
+              </div>
+              <div class="text">
+                <div class="profile">
+                  <img
+                    src="./images/avatars/image-ramsesmiron.png"
+                    alt="amy"
+                    id="aa"
+                  />
+                  <h4>ramsesmiron</h4>
+                  <p class="time">1 week ago</p>
+                  <img src="./images/icon-reply.svg" alt="reply" id="ab" />
+                  <p>Reply</p>
+                </div>
+                <br />
+                <p>
+                  <span>@maxblagun</span>
+                  If you are still new, I'd recommend focusing on the <br />
+                  fundamentals of HTML, CSS AND JS before considering React.
+                  It's very <br />
+                  tempting to jump ahead but lay a solid foundation first.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="c">
+            <div id="comments-diva">
+              <div class="counter">
+                <img onclick="add3()" src="./images/icon-plus.svg" alt="plus" id="p" />
+                <h4 id="bum-txt3">5</h4>
+                <img onclick="subtract3()" src="./images/icon-minus.svg" alt="minus" />
+              </div>
+              <div class="text">
+                <div class="profile">
+                  <img
+                    src="./images/avatars/image-juliusomo.png"
+                    alt="amy"
+                    id="aa"
+                  />
+                  <h4>juliusomo</h4>
+                  <p class="time">2 days ago</p>
+                  <img src="./images/icon-reply.svg" alt="reply" id="ab" />
+                  <p>Reply</p>
+                </div>
+                <br />
+                <p>
+                  <span> @ramsesmiron </span>
+                  I couldn't agree more iwth this. Everything moves so <br />
+                  fast and it seems everybody knows the newest library/
+                  framework <br />. But the fundamentals are what stay constant
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+
+      </div>
+      <div class="c">
+        <div id="comments-divf">
+          <img src="./images/avatars/image-juliusomo.png" alt="jj" id="aa">
+          <textarea name="dok" id="tex">Add a comment...</textarea>
+          <button id="sendbtn">SEND</button>
+        </div>
+      </div>
+      <script src="./src/COUNTER.JS"></script>
+      <script src="./src/SENDMSG.JS"></script>
+    </main>
+  </body>
+</html>
