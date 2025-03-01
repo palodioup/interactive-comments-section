@@ -62,8 +62,15 @@ body {
   margin-right: 10px;
 }
 
-#ab {
+#ab,
+#ab1 {
   margin-left: 250px;
+  margin-right: 15px;
+}
+
+#ab2,
+#ab3 {
+  margin-left: 200px;
   margin-right: 15px;
 }
 
@@ -89,7 +96,6 @@ body {
 
 .huqdfvw {
   display: block;
-  
 }
 
 span {

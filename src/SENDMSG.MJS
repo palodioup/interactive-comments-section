@@ -1,6 +1,7 @@
 const textArea = document.getElementById("tex");
 const sendButton = document.getElementById("sendbtn");
 const main = document.getElementById("main");
+
 const img = `
   <img
     src="./images/avatars/image-juliusomo.png"
@@ -14,7 +15,6 @@ sendButton.addEventListener("click", (e) => {
   const newMsg = document.createElement("div")
   newMsg.className = "c"
   newMsg.innerHTML = `
-    
       <div class="c">
         <div id="comments-div">
           <div class="counter">
@@ -39,7 +39,3 @@ sendButton.addEventListener("click", (e) => {
   main.appendChild(newMsg)
   textArea.innerHTML = ``
 });
-
-export { img }
-export { main }
-export { textArea }
