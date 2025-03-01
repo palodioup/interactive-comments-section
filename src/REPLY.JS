@@ -5,10 +5,34 @@ const replyBtn3 = document.getElementById("ab3");
 const mainZ = document.getElementById("main");
 const textAreaZ = document.getElementById("tex");
 
+const delZa = `
+  <img src="./images/delete_24dp_EB3D34_FILL0_wght400_GRAD0_opsz24.png" alt="del" id="aba">
+`;
+
+const delZb = `
+  <img src="./images/delete_24dp_EB3D34_FILL0_wght400_GRAD0_opsz24.png" alt="del" id="ab1a">
+`;
+
+const delZc = `
+  <img src="./images/delete_24dp_EB3D34_FILL0_wght400_GRAD0_opsz24.png" alt="del" id="ab2a">
+`;
+
+const delZd = `
+  <img src="./images/delete_24dp_EB3D34_FILL0_wght400_GRAD0_opsz24.png" alt="del" id="ab3a">
+`;
+
+const imgZ = `
+  <img
+    src="./images/avatars/image-juliusomo.png"
+    alt="amy"
+    id="aa"
+  />
+`;
+
 replyBtn.addEventListener("click", () => {
-  const text = document.createElement("div")
+  const text = document.createElement("div");
   text.innerHTML = `
-    
+
           <div class="c">
             <div id="comments-diva">
               <div class="counter">
@@ -18,14 +42,10 @@ replyBtn.addEventListener("click", () => {
               </div>
               <div class="text">
                 <div class="profile">
-                  <img
-                    src="./images/avatars/image-ramsesmiron.png"
-                    alt="amy"
-                    id="aa"
-                  />
+                  ${imgZ}
                   <h4>ramsesmiron</h4>
                   <p class="time">Now</p>
-                  <img src="./images/icon-reply.svg" alt="reply" id="ab2" />
+                  ${delZa}
                   <p>Reply</p>
                 </div>
                 <br />
@@ -36,12 +56,12 @@ replyBtn.addEventListener("click", () => {
             </div>
           </div>
           </div>
-  `
-  mainZ.appendChild(text)
+  `;
+  mainZ.appendChild(text);
 });
 
 replyBtn1.addEventListener("click", () => {
-  const text = document.createElement("div")
+  const text = document.createElement("div");
   text.innerHTML = `
     
           <div class="c">
@@ -53,14 +73,10 @@ replyBtn1.addEventListener("click", () => {
               </div>
               <div class="text">
                 <div class="profile">
-                  <img
-                    src="./images/avatars/image-ramsesmiron.png"
-                    alt="amy"
-                    id="aa"
-                  />
+                  ${imgZ}
                   <h4>ramsesmiron</h4>
                   <p class="time">Now</p>
-                  <img src="./images/icon-reply.svg" alt="reply" id="ab2" />
+                  ${delZb}
                   <p>Reply</p>
                 </div>
                 <br />
@@ -71,12 +87,12 @@ replyBtn1.addEventListener("click", () => {
             </div>
           </div>
           </div>
-  `
-  mainZ.appendChild(text)
+  `;
+  mainZ.appendChild(text);
 });
 
 replyBtn2.addEventListener("click", () => {
-  const text = document.createElement("div")
+  const text = document.createElement("div");
   text.innerHTML = `
     
           <div class="c">
@@ -88,14 +104,10 @@ replyBtn2.addEventListener("click", () => {
               </div>
               <div class="text">
                 <div class="profile">
-                  <img
-                    src="./images/avatars/image-ramsesmiron.png"
-                    alt="amy"
-                    id="aa"
-                  />
+                  ${imgZ}
                   <h4>ramsesmiron</h4>
                   <p class="time">Now</p>
-                  <img src="./images/icon-reply.svg" alt="reply" id="ab2" />
+                  ${delZc}
                   <p>Reply</p>
                 </div>
                 <br />
@@ -106,12 +118,12 @@ replyBtn2.addEventListener("click", () => {
             </div>
           </div>
           </div>
-  `
-  mainZ.appendChild(text)
+  `;
+  mainZ.appendChild(text);
 });
 
 replyBtn3.addEventListener("click", () => {
-  const text = document.createElement("div")
+  const text = document.createElement("div");
   text.innerHTML = `
     
           <div class="c">
@@ -123,14 +135,10 @@ replyBtn3.addEventListener("click", () => {
               </div>
               <div class="text">
                 <div class="profile">
-                  <img
-                    src="./images/avatars/image-ramsesmiron.png"
-                    alt="amy"
-                    id="aa"
-                  />
+                  ${imgZ}
                   <h4>ramsesmiron</h4>
                   <p class="time">Now</p>
-                  <img src="./images/icon-reply.svg" alt="reply" id="ab2" />
+                  ${delZd}
                   <p>Reply</p>
                 </div>
                 <br />
@@ -141,6 +149,13 @@ replyBtn3.addEventListener("click", () => {
             </div>
           </div>
           </div>
-  `
-  mainZ.appendChild(text)
+  `;
+  mainZ.appendChild(text);
 });
+
+const remove = () => {
+  mainZ.parentNode.removeChild(mainZ)
+}
+
+mainZ.innerHTML = ``
+insertBefore(mainZ)

@@ -2,6 +2,10 @@ const textArea = document.getElementById("tex");
 const sendButton = document.getElementById("sendbtn");
 const main = document.getElementById("main");
 
+const del = `
+  <img src="./images/delete_24dp_EB3D34_FILL0_wght400_GRAD0_opsz24.png" alt="del" id="abad">
+`;
+
 const img = `
   <img
     src="./images/avatars/image-juliusomo.png"
@@ -27,8 +31,7 @@ sendButton.addEventListener("click", (e) => {
               ${img}
               <h4>juliusomo</h4>
               <p class="time">Now</p>
-              <img src="./images/icon-reply.svg" alt="reply" id="ab" />
-              <p>Reply</p>
+              ${del}
             </div>
             <br />
             <p>${textArea.value}</p>

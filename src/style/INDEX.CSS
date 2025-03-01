@@ -68,10 +68,33 @@ body {
   margin-right: 15px;
 }
 
+#aba,
+#ab1a {
+  margin-left: 200px;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+#abad {
+  margin-left: 400px;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+}
+
 #ab2,
 #ab3 {
   margin-left: 200px;
   margin-right: 15px;
+}
+
+#ab2a,
+#ab3a {
+  margin-left: 200px;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
 }
 
 #comments-diva {
