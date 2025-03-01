@@ -39,3 +39,7 @@ sendButton.addEventListener("click", (e) => {
   main.appendChild(newMsg)
   textArea.innerHTML = ``
 });
+
+export { img }
+export { main }
+export { textArea }
